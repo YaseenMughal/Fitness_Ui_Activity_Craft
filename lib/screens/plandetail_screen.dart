@@ -116,22 +116,16 @@ class _PlanDetailScreenState extends State<PlanDetailScreen> {
                           ),
                         ),
                       ),
-                      activeDayStyle: const DayStyle(
+                      activeDayStyle: DayStyle(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(8)),
+                          borderRadius: const BorderRadius.all(Radius.circular(8)),
                           gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
                               AppColor.mainColor,
-                              AppColor.blackColor,
+                              AppColor.mainColor.withOpacity(0.7),
                             ],
-                            // colors: [
-                            //   // AppColor.BasicColor,
-                            //   // AppColor.greyColor,
-                            //   Color(0xff3371FF),
-                            //   Color(0xff8426D6),
-                            // ],
                           ),
                         ),
                       ),
